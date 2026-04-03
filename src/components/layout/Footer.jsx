@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-slate-400">
-        © 2026 {profile.name}. All rights reserved.
+        © 2026 rajking. All rights reserved.
       </div>
     </footer>
   )
