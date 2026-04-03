@@ -5,8 +5,7 @@ export const profile = {
     'I am SM Rajking. I focus on building clean, scalable, and user-friendly web applications.',
   longBio:
     'This portfolio is aligned with my LinkedIn profile and is structured to grow as I add new projects, experience, and achievements over time.',
-  avatar:
-    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80',
+  avatar: '/image/Sheikh-Rajking-2.webp',
   resumeLink: 'https://www.linkedin.com/in/smrajking/',
   opportunitiesText:
     'Open to impactful software roles, collaboration opportunities, and long-term growth-focused engineering work.',
