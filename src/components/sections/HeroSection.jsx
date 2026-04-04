@@ -40,9 +40,7 @@ const HeroSection = () => {
 
           <div className="hero-cta mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
-              href={profile.resumeLink}
-              target="_blank"
-              rel="noreferrer"
+              href="/explore-choice"
               className="btn w-full border-0 bg-gradient-to-r from-cyan-400 to-blue-500 px-6 text-white hover:from-cyan-300 hover:to-blue-400 sm:w-auto"
             >
               View My Project & Publications

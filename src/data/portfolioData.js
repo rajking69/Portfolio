@@ -61,13 +61,65 @@ export const researchAreas = [
 
 export const projects = [
   {
+    title: 'Job Application Tracker',
+    category: 'Frontend Web',
+    description:
+      'A dashboard-style tracker to manage job applications with interview and rejected workflows, status tabs, and dynamic job counts.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    overviewImage: 'https://raw.githubusercontent.com/rajking69/Assignment-04/main/jobs.png',
+    repoUrl: 'https://github.com/rajking69/Assignment-04',
+    liveUrl: 'https://rajking69.github.io/Assignment-04/',
+  },
+  {
+    title: 'GitHub Issues Tracker',
+    category: 'Frontend Web',
+    description:
+      'A responsive issues dashboard with authentication, status-based filtering, and search flow for managing GitHub-style issue cards.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    overviewImage: 'https://rajking69.github.io/Assignment-05/assets/github-logo.png',
+    repoUrl: 'https://github.com/rajking69/Assignment-05',
+    liveUrl: 'https://rajking69.github.io/Assignment-05/',
+  },
+  {
+    title: 'Digital Tools Buying Platform',
+    category: 'Web Application',
+    description:
+      'A React-based digital tools marketplace featuring product browsing, cart management, and checkout feedback in a single-page workflow.',
+    tags: ['React', 'Tailwind CSS', 'Vite'],
+    overviewImage: 'https://digitools-website1.netlify.app/assets/banner-C8dER-aL.png',
+    repoUrl: 'https://github.com/rajking69/Assignment-06',
+    liveUrl: 'https://digitools-website1.netlify.app/',
+  },
+  {
+    title: 'TechWave - Podcast Website',
+    category: 'Frontend Web',
+    description:
+      'A clean podcast website showcasing featured shows, episode highlights, and structured sections with responsive behavior.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    overviewImage: 'https://rajking69.github.io/Assignment-02/assets/hero-circle.png',
+    repoUrl: 'https://github.com/rajking69/Assignment-02',
+    liveUrl: 'https://rajking69.github.io/Assignment-02/',
+  },
+  {
+    title: 'KnowledgeVault Web Page',
+    category: 'Frontend Web',
+    description:
+      'A structured landing page for Personal Knowledge Vault focused on clear storytelling, section hierarchy, and clean visual communication.',
+    tags: ['HTML5', 'CSS3', 'Responsive Design'],
+    overviewImage: 'https://rajking69.github.io/Assignment-01/assets/knowledge.png',
+    repoUrl: 'https://github.com/rajking69/Assignment-01',
+    liveUrl: 'https://rajking69.github.io/Assignment-01/',
+  },
+  {
     title: 'Portfolio Website',
+    category: 'Web Development',
     description:
       'A modern personal portfolio built using React and Tailwind CSS with reusable sections and clean project structure.',
     tags: ['React', 'Tailwind CSS', 'JavaScript'],
   },
   {
     title: 'UI Component Playground',
+    category: 'UI Engineering',
     description:
       'A component-focused project to experiment with cards, forms, and responsive layouts for real products.',
     tags: ['React', 'DaisyUI', 'CSS'],

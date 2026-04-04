@@ -32,7 +32,7 @@ const ProjectsSection = () => {
       </div>
 
       <div className="mt-8 text-center">
-        <a href="#home" className="btn btn-outline w-full border-cyan-300/40 text-slate-100 sm:w-auto">
+        <a href="/projects" className="btn btn-outline w-full border-cyan-300/40 text-slate-100 sm:w-auto">
           View All Projects
         </a>
       </div>

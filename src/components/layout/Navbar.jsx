@@ -8,8 +8,8 @@ const desktopItems = [
   { label: 'Home', href: '/#home', active: true },
   { label: 'About Me', href: '/#about-me' },
   { label: 'Bio', href: '/#bio', chevron: true },
-  { label: 'Research', href: '/#research', chevron: true },
-  { label: 'Projects', href: '/#projects' },
+  { label: 'Research', href: '/research' },
+  { label: 'Projects', href: '/projects' },
   { label: 'Contact', href: '/collaborate' },
 ]
 
