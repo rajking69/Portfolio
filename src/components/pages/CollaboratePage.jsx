@@ -171,7 +171,7 @@ const CollaboratePage = ({ theme }) => {
 
             <div className={`mt-7 border-t pt-6 ${isLight ? 'border-slate-200' : 'border-slate-800'}`}>
               <p className={`mb-3 text-xs font-bold uppercase tracking-wider ${isLight ? 'text-slate-700' : 'text-slate-400'}`}>Connect Socially</p>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-nowrap items-center gap-2 overflow-x-auto pb-1">
                 {socialItems.map((item) => {
                   const Icon = item.icon
                   return (
@@ -182,10 +182,10 @@ const CollaboratePage = ({ theme }) => {
                       rel="noreferrer"
                       aria-label={item.label}
                       title={item.label}
-                      className={`inline-flex h-12 w-12 items-center justify-center rounded-xl border text-xl shadow-sm transition ${
+                      className={`inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border text-base shadow-sm transition ${
                         isLight
-                          ? 'border-slate-400 bg-white text-slate-800 shadow-[0_8px_20px_rgba(15,23,42,0.12)] hover:border-sky-500 hover:text-sky-700'
-                          : 'border-slate-600 bg-slate-900 text-slate-100 shadow-[0_8px_20px_rgba(8,47,73,0.24)] hover:border-cyan-300 hover:text-cyan-300'
+                          ? 'border-slate-400 bg-white text-slate-800 shadow-[0_6px_16px_rgba(15,23,42,0.11)] hover:border-sky-500 hover:text-sky-700'
+                          : 'border-slate-600 bg-slate-900 text-slate-100 shadow-[0_6px_16px_rgba(8,47,73,0.2)] hover:border-cyan-300 hover:text-cyan-300'
                       }`}
                     >
                       <Icon className="collab-social-icon" />

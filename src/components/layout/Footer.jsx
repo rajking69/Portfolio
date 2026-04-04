@@ -39,7 +39,8 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <h3 className="font-display text-xl font-semibold text-white">{profile.name}</h3>
           <p className="mt-3 text-sm text-slate-300">{profile.headline}</p>
-          <div className="mt-4 flex flex-wrap justify-center gap-2 md:justify-start">
+          <p className="mt-2 max-w-sm text-xs leading-relaxed text-slate-400">{profile.opportunitiesText}</p>
+          <div className="mt-4 flex flex-nowrap items-center justify-center gap-2 overflow-x-auto pb-1 md:justify-start md:overflow-visible">
             {footerSocialLinks.map((item) => {
               const Icon = item.icon
               return (
@@ -50,9 +51,9 @@ const Footer = () => {
                   rel="noreferrer"
                   aria-label={item.label}
                   title={item.label}
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-cyan-300/35 bg-slate-900/75 text-cyan-200 shadow-[0_8px_18px_rgba(8,47,73,0.28)] transition hover:-translate-y-0.5 hover:border-cyan-300 hover:bg-slate-800 hover:text-cyan-100"
+                  className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-cyan-300/35 bg-slate-900/75 text-cyan-200 shadow-[0_6px_14px_rgba(8,47,73,0.22)] transition hover:-translate-y-0.5 hover:border-cyan-300 hover:bg-slate-800 hover:text-cyan-100"
                 >
-                  <Icon className="footer-social-icon" size={17} />
+                  <Icon className="footer-social-icon" size={14} />
                 </a>
               )
             })}
