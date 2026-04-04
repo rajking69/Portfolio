@@ -66,6 +66,9 @@ function CollaborateRoute({ theme, onToggleTheme }) {
       <main>
         <CollaboratePage theme={theme} />
       </main>
+      <div className={`border-t px-4 py-4 text-center text-xs ${isLight ? 'border-slate-300 text-slate-600' : 'border-white/10 text-slate-400'}`}>
+        © 2026 sm_rajking. All rights reserved.
+      </div>
     </div>
   )
 }
