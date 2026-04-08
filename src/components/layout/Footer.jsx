@@ -25,10 +25,10 @@ const footerSocialLinks = [
 ]
 
 const quickLinkHrefMap = {
-  About: '/#about-me',
-  Experience: '/#bio',
-  Skills: '/#research',
-  Projects: '/#projects',
+  About: '/about',
+  Experience: '/about#experience',
+  Skills: '/about#skills',
+  Projects: '/projects',
   Contact: '/collaborate',
 }
 
@@ -63,13 +63,15 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <h4 className="text-sm font-semibold uppercase tracking-wider text-cyan-300">Quick Links</h4>
           <ul className="mt-3 space-y-2 text-sm text-slate-300">
-            {quickLinks.map((item) => (
-              <li key={item}>
-                <a href={quickLinkHrefMap[item] || '/#home'} className="hover:text-cyan-200">
-                  {item}
-                </a>
-              </li>
-            ))}
+            {quickLinks
+              .filter((item) => quickLinkHrefMap[item])
+              .map((item) => (
+                <li key={item}>
+                  <a href={quickLinkHrefMap[item]} className="hover:text-cyan-200">
+                    {item}
+                  </a>
+                </li>
+              ))}
           </ul>
         </div>
 

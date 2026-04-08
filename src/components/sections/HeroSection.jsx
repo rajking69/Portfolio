@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="hero-layout grid items-start gap-8 md:grid-cols-[1.15fr_0.85fr] lg:grid-cols-[1.35fr_0.95fr]">
         <Reveal className="order-2 md:order-1">
           <div id="about-me" className="scroll-mt-24" />
-          <h1 className="hero-title mt-4 text-4xl font-black leading-[0.93] text-white sm:text-5xl md:mt-6 md:text-6xl lg:text-7xl">
+          <h1 className="hero-title mt-4 text-3xl font-black leading-[0.93] text-white sm:text-4xl md:mt-6 md:text-5xl lg:text-6xl">
             <span className="font-serifDisplay">Hi!</span>
             <br />
             <span className="font-serifDisplay">I am</span>

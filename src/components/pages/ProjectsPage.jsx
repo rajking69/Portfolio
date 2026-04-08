@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import PropTypes from 'prop-types'
 import { motion } from 'framer-motion'
-import { FolderKanban } from 'lucide-react'
+import { FolderKanban, Search } from 'lucide-react'
 import { projects } from '../../data/portfolioData'
 
 const categories = ['All', ...new Set(projects.map((project) => project.category))]
@@ -9,14 +9,33 @@ const categories = ['All', ...new Set(projects.map((project) => project.category
 const ProjectsPage = ({ theme }) => {
   const isLight = theme === 'light'
   const [activeCategory, setActiveCategory] = useState('All')
+  const [searchQuery, setSearchQuery] = useState('')
 
   const visibleProjects = useMemo(() => {
+    const loweredQuery = searchQuery.trim().toLowerCase()
+
+    const searched = projects.filter((project) => {
+      if (!loweredQuery) {
+        return true
+      }
+
+      return (
+        project.title.toLowerCase().includes(loweredQuery) ||
+        project.description.toLowerCase().includes(loweredQuery) ||
+        project.category.toLowerCase().includes(loweredQuery) ||
+        project.tags.some((tag) => tag.toLowerCase().includes(loweredQuery))
+      )
+    })
+
     if (activeCategory === 'All') {
-      return projects
+      return searched
     }
 
-    return projects.filter((project) => project.category === activeCategory)
-  }, [activeCategory])
+    return searched.filter((project) => project.category === activeCategory)
+  }, [activeCategory, searchQuery])
+
+  const totalProjects = projects.length
+  const totalCategories = categories.length - 1
 
   return (
     <section
@@ -39,6 +58,44 @@ const ProjectsPage = ({ theme }) => {
           <p className={`mx-auto mt-3 max-w-2xl text-sm md:text-base ${isLight ? 'text-slate-700' : 'text-slate-300'}`}>
             Browse projects by category.
           </p>
+
+          <div className="mx-auto mt-5 grid max-w-lg grid-cols-3 gap-2">
+            <div className={`rounded-xl border p-2.5 text-center ${isLight ? 'border-slate-300 bg-white/90' : 'border-slate-700 bg-slate-900/80'}`}>
+              <p className={`text-xl font-extrabold sm:text-2xl ${isLight ? 'text-slate-900' : 'text-white'}`}>{totalProjects}</p>
+              <p className={`mt-0.5 text-[10px] font-semibold uppercase tracking-wider ${isLight ? 'text-slate-500' : 'text-slate-400'}`}>Total</p>
+            </div>
+
+            <div className={`rounded-xl border p-2.5 text-center ${isLight ? 'border-cyan-300/50 bg-cyan-50' : 'border-cyan-400/25 bg-cyan-400/10'}`}>
+              <p className={`text-xl font-extrabold sm:text-2xl ${isLight ? 'text-cyan-800' : 'text-cyan-300'}`}>{visibleProjects.length}</p>
+              <p className={`mt-0.5 text-[10px] font-semibold uppercase tracking-wider ${isLight ? 'text-cyan-700' : 'text-cyan-200/90'}`}>Visible</p>
+            </div>
+
+            <div className={`rounded-xl border p-2.5 text-center ${isLight ? 'border-indigo-300/50 bg-indigo-50' : 'border-indigo-400/25 bg-indigo-400/10'}`}>
+              <p className={`text-xl font-extrabold sm:text-2xl ${isLight ? 'text-indigo-800' : 'text-indigo-300'}`}>{totalCategories}</p>
+              <p className={`mt-0.5 text-[10px] font-semibold uppercase tracking-wider ${isLight ? 'text-indigo-700' : 'text-indigo-200/90'}`}>Category</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-5 flex justify-center">
+          <div className="group relative w-full max-w-xl">
+            <Search
+              size={14}
+              className={`absolute left-3 top-1/2 -translate-y-1/2 transition-colors ${
+                isLight ? 'text-slate-500 group-focus-within:text-cyan-700' : 'text-slate-500 group-focus-within:text-cyan-300'
+              }`}
+            />
+            <input
+              value={searchQuery}
+              onChange={(event) => setSearchQuery(event.target.value)}
+              placeholder="Search projects by title, stack, or keyword..."
+              className={`w-full rounded-lg border py-2 pl-9 pr-3 text-sm outline-none transition-all ${
+                isLight
+                  ? 'border-slate-300 bg-white text-slate-800 placeholder:text-slate-400 focus:border-cyan-600 focus:ring-1 focus:ring-cyan-600'
+                  : 'border-slate-700 bg-slate-950 text-slate-200 placeholder:text-slate-600 focus:border-cyan-300 focus:ring-1 focus:ring-cyan-300'
+              }`}
+            />
+          </div>
         </div>
 
         <div className="mb-8 flex flex-wrap justify-center gap-2">
@@ -50,7 +107,7 @@ const ProjectsPage = ({ theme }) => {
                 key={category}
                 type="button"
                 onClick={() => setActiveCategory(category)}
-                className={`rounded-lg border px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-all ${
+                className={`rounded-lg border px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-wider transition-all ${
                   isActive
                     ? isLight
                       ? 'border-cyan-500 bg-cyan-500 text-white'

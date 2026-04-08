@@ -12,7 +12,7 @@ const ProjectsSection = () => {
       />
 
       <div className="mt-8 grid gap-5 md:mt-10 lg:grid-cols-2">
-        {projects.map((project, index) => (
+        {projects.slice(0, 4).map((project, index) => (
           <Reveal key={project.title} delay={0.05 * index}>
             <article className="card h-full border border-white/10 bg-slate-900/80">
               <div className="card-body">

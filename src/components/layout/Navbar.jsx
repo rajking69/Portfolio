@@ -6,8 +6,9 @@ import { profile } from '../../data/portfolioData'
 
 const desktopItems = [
   { label: 'Home', href: '/#home', active: true },
-  { label: 'About Me', href: '/#about-me' },
-  { label: 'Bio', href: '/#bio', chevron: true },
+  { label: 'About Me', href: '/about' },
+  { label: 'Bio', href: '/about#education' },
+  { label: 'Certifications', href: '/about#certifications' },
   { label: 'Research', href: '/research' },
   { label: 'Projects', href: '/projects' },
   { label: 'Contact', href: '/collaborate' },

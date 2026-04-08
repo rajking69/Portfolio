@@ -14,15 +14,15 @@ export const profile = {
   resumeLink: 'https://www.linkedin.com/in/smrajking/',
   opportunitiesText:
     'Open to impactful software roles, collaboration opportunities, and long-term growth-focused engineering work.',
-  location: 'Johir & Brothers, Al madani road, Badurtala, Panchlish, Chittagong',
+  location: 'Badurtala (Samad Mansion, 3rd Floor), 500 Al Madani Road, Sholok Bahar, Chittagong, Bangladesh',
   email: 'smrajking4457@gmail.com',
-  phone: '01882287039',
+  phone: '+8801882287039',
 }
 
 export const stats = [
-  { label: 'Focus', value: 'Web' },
-  { label: 'Stack', value: 'React' },
-  { label: 'Status', value: 'Open' },
+  { label: 'Focus', value: 'NLP + AI' },
+  { label: 'Stack', value: 'MERN + ML' },
+  { label: 'Status', value: 'Open to Work' },
 ]
 
 export const socialLinks = [
@@ -33,29 +33,44 @@ export const socialLinks = [
 
 export const researchAreas = [
   {
-    title: 'Frontend Development',
+    title: 'Natural Language Processing (NLP)',
     description:
-      'Building responsive user interfaces with reusable components and modern frontend workflows.',
+      'Working on context-aware language understanding with focus on Bangla social media analysis and robust text classification.',
   },
   {
-    title: 'React Ecosystem',
+    title: 'Machine Learning and AI',
     description:
-      'Creating scalable React applications with clean state flow and maintainable architecture.',
+      'Building practical ML pipelines with Python, TensorFlow, Keras, and explainable deep learning strategies for real datasets.',
   },
   {
-    title: 'UI Engineering',
+    title: 'Large Language Models',
     description:
-      'Designing polished interfaces with Tailwind CSS and component-driven development.',
+      'Exploring in-context learning, constraint robustness, and LLM behavior under challenging prompts for research-grade outcomes.',
   },
   {
-    title: 'Performance and Quality',
+    title: 'Full Stack Web Development',
     description:
-      'Improving loading speed, accessibility, and consistency through practical engineering decisions.',
+      'Developing MERN-based applications with clean architecture, responsive UI, and deployable workflows for production-ready delivery.',
   },
   {
-    title: 'Continuous Growth',
+    title: 'Algorithms and Networks',
     description:
-      'Actively learning new tools and shipping better products with each project iteration.',
+      'Applying strong foundations in algorithms, data structures, and computer networking for optimized and reliable systems.',
+  },
+  {
+    title: 'Responsive Web Interfaces',
+    description:
+      'Building mobile-first and accessible interfaces with reusable components, consistent spacing, and practical UX flow.',
+  },
+  {
+    title: 'Backend API Integration',
+    description:
+      'Connecting frontend applications with secure REST APIs, authentication flows, and structured data handling.',
+  },
+  {
+    title: 'Deployment and Optimization',
+    description:
+      'Deploying web projects with stable build pipelines, performance tuning, and production-ready configuration.',
   },
 ]
 
@@ -110,20 +125,6 @@ export const projects = [
     repoUrl: 'https://github.com/rajking69/Assignment-01',
     liveUrl: 'https://rajking69.github.io/Assignment-01/',
   },
-  {
-    title: 'Portfolio Website',
-    category: 'Web Development',
-    description:
-      'A modern personal portfolio built using React and Tailwind CSS with reusable sections and clean project structure.',
-    tags: ['React', 'Tailwind CSS', 'JavaScript'],
-  },
-  {
-    title: 'UI Component Playground',
-    category: 'UI Engineering',
-    description:
-      'A component-focused project to experiment with cards, forms, and responsive layouts for real products.',
-    tags: ['React', 'DaisyUI', 'CSS'],
-  },
 ]
 
 export const quickLinks = [
@@ -133,3 +134,97 @@ export const quickLinks = [
   'Projects',
   'Contact',
 ]
+
+export const aboutFeatureContent = {
+  Education: {
+    title: 'Education',
+    items: [
+      'B.Sc. in Computer Science and Engineering (8th Semester, Ongoing) - International Islamic University Chittagong (2026), result will be published.',
+      'HSC in Science - Hazera-Taju Degree College (2020), GPA 5.00',
+      'SSC in Science - Government Muslim High School (2018), GPA 5.00',
+    ],
+  },
+  Experience: {
+    title: 'Experience Goal',
+    items: [],
+  },
+  Skills: {
+    title: 'Technical Skills',
+    items: [
+      'Languages: C, C++, Python, JavaScript',
+      'AI/ML: NumPy, Pandas, Matplotlib, TensorFlow, Keras, CNN, NLP, In-Context Learning, LLMs',
+      'Core: Algorithms, Data Structures, Computer Networks',
+      'Tools: Git, GitHub, Postman, LaTeX, Microsoft Office 365, Windows OS, Netlify',
+    ],
+  },
+  Leadership: {
+    title: 'Leadership and Teamwork',
+    items: [
+      'Built strong collaboration and communication through team-based web and ML projects.',
+    ],
+  },
+  Achievements: {
+    title: 'Research and Recognition',
+    items: [
+      'Published and showcased portfolio projects including KnowledgeVault Web Page, TechWave Podcast Website, Job Application Tracker, GitHub Issues Tracker, and Digital Tools Buying Platform.',
+      'Counter-Example Guided In-Context Learning: Mitigating Constraint Imitation in Large Language Models, accepted at BIM 2025, Dhaka (Sep 2025); published in Springer Nature, pp. 162-174, First Online: 20 Feb 2026.',
+      'Hybrid CNN-Vision Transformer with Attention-Based Explainability for Brain Tumor MRI Classification, accepted at QPAIN 2026, Chattogram, Bangladesh (Apr 2026).',
+    ],
+  },
+  Languages: {
+    title: 'Language Proficiency',
+    items: [
+      'Bangla: Native proficiency',
+      'English: Professional proficiency (IELTS planned soon)',
+    ],
+  },
+  Trainings: {
+    title: 'Learning Track',
+    items: [
+      'Currently taking the Programming Hero web development course.',
+      'Covered/learning: HTML, CSS, Tailwind, Node.js, React, Firebase, Next.js, MongoDB, Express.js.',
+    ],
+  },
+  'Co-curricular': {
+    title: 'Co-curricular',
+    items: [
+      'Active in practical development and research-based project work beyond regular coursework.',
+    ],
+  },
+  Memberships: {
+    title: 'Professional Presence',
+    items: [],
+  },
+  Collaboration: {
+    title: 'Collaboration Focus',
+    items: [],
+  },
+  Certifications: {
+    title: 'Certifications',
+    items: [
+      {
+        title: 'Counter-Example Guided In-Context Learning: Mitigating Constraint Imitation in Large Language Models',
+        issuer: 'Conference Certificate - BIM 2025, held on September 25 - 27, 2025 at Dhaka International University, Bangladesh.',
+        href: 'https://drive.google.com/file/d/1fjO5HfFiUdroEyIbO5qAC2eeKQuN1AVn/view?usp=drive_link',
+        image: 'https://drive.google.com/thumbnail?id=1fjO5HfFiUdroEyIbO5qAC2eeKQuN1AVn&sz=w1200',
+      },
+    ],
+  },
+  'Personal Profile': {
+    title: 'Personal Profile',
+    items: [
+      'Highly motivated Computer Science and Engineering enthusiast committed to continuous learning, higher education, and skill development.',
+      'Long-term ambition is to become a recognized computing professional driving innovation and meaningful impact.',
+      'Date of Birth: June 7, 2002 | Gender: Male | Nationality: Bangladeshi',
+    ],
+  },
+  'University Projects': {
+    title: 'University Projects',
+    items: [
+      'AI_Enhanced_Web_Platform_for_Visualizing_Root_Finding_Algorithms - interactive learning platform with AI assistance for numerical methods.',
+      'Energy-Efficiency-in-WSNs-IEEE-802.15.4-vs.-LEACH - LEACH-based WSN implementation in OMNeT++ with INET framework.',
+      'Smart-Fruits-and-vegetables-Classify-System - CNN-based classifier with Streamlit app and confidence scoring.',
+      'Pay-Trackr - PHP/MySQL payroll and attendance system with role-based access and HR operations support.',
+    ],
+  },
+}
